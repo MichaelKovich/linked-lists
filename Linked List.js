@@ -8,7 +8,7 @@ class LinkedList {
   }
 
   add(element) {
-    let newNode = new Node(element);
+    const newNode = new Node(element);
     if (this.head === null) {
       this.head = newNode;
     } else {
@@ -66,7 +66,7 @@ class LinkedList {
         str += `${currentNode.element} --> `;
       }
     }
-    console.log(str + 'null');
+    console.log(`${str}null`);
   }
 }
 
